@@ -1,5 +1,21 @@
 # Navigator Library
 
+> **NOTE:**
+> To run, clone navigator-lib and navigator-rs into the home directory.
+> Also, download python3.9 from the deadsnakes ppa apt repository.
+> Then, you will cycle through three commands:
+> * `vim navigator-rs/src/lib.rs`
+> * `python3.9 -m pip install ./navigator-lib`
+> * `python3.9`
+> In python, you will cycle through two commands:
+> * `import bluerobotics_navigator as navigator`
+> * `navigator.init()`
+> After viewing the error, take note of the line number, exit the shell
+> with CTRL-D, and alter port numbers until the error progresses.
+> 
+> Also, to make the SPI ports visible in /dev, you need to run
+> `sudo modprobe spidev` on every reboot.
+
 [![Actions](https://github.com/bluerobotics/navigator-lib/actions/workflows/action.yml/badge.svg)](https://github.com/bluerobotics/navigator-lib/actions/workflows/action.yml)
 [![PyPI](https://img.shields.io/pypi/v/bluerobotics_navigator)](https://pypi.org/project/bluerobotics-navigator/)
 
